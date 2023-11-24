@@ -1,0 +1,93 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo{
+    background-color: #ff6600;
+    padding: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-weight: 900;
+    
+}
+
+.logo h1 b {
+    font-weight: 900;
+    font-size: 2.3rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+    color: white;
+}
+
+ul li{
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    transition: 0.1s;
+}
+
+ul li:hover{
+    color: #ff6600;
+}
+
+/* MAIN */
+
+    /* SECTION 1 */
+
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/img/699-KTM_1290_SUPER_ADVENTURE_S_Action.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-1 h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+    /* SECTION 2 */
+
+.section-2{
+    display: flex;
+    background-color: #ff6600;
+    height: 80vh;
+}
+
+.section-2 p{
+    color: #fff;
+    font-size: 5rem;
+}
