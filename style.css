@@ -23,7 +23,6 @@ header{
 }
 
 .logo{
-    /* background-color: #ff6600; */
     color: #ff6600 ;
     padding: 0.5rem;
     margin-top: 10px;
@@ -415,4 +414,64 @@ nav a:hover::after{
 
 .div-istagram p{
     font-size: 1.4rem;
+}
+
+
+        /* SECTION 6 */
+
+
+.section-6{
+    height: 40rem;
+    background-image: url(img/reyDePalmas.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.div-container{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.divH2{
+    width: 80%;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.div2{
+    display: flex;
+    gap: 7rem;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.div-container p{
+    width: 30rem;
+    font-size: 1.2rem;
+    text-shadow: -.8rem .8rem .3rem black;
+}
+
+
+/* SECTION 7 */
+
+.section-7{
+    height: 30rem;
 }
