@@ -38,17 +38,17 @@ header {
     font-size: 2.3rem;
 }
 
-nav ul {
+.nav-main ul {
     display: flex;
     gap: 2rem;
 }
 
-nav li {
+.nav-main li {
     list-style-type: none;
 
 }
 
-nav a {
+.nav-main a {
     color: white;
     font-weight: 600;
     cursor: pointer;
@@ -60,12 +60,12 @@ nav a {
     transition: all .5s;
 }
 
-nav a:hover {
+.nav-main a:hover {
     background-color: #ff6600;
     color: white;
 }
 
-nav a::before {
+.nav-main a::before {
     content: "";
     position: absolute;
     bottom: 12px;
@@ -78,7 +78,7 @@ nav a::before {
     transition: all .2s;
 }
 
-nav a::after {
+.nav-main a::after {
     content: "";
     position: absolute;
     top: 12px;
@@ -91,16 +91,20 @@ nav a::after {
     transition: all .2s;
 }
 
-nav a:hover::before {
+.nav-main a:hover::before {
     opacity: 1;
     bottom: -8px;
     left: -8px;
 }
 
-nav a:hover::after {
+.nav-main a:hover::after {
     opacity: 1;
     top: -8px;
     right: -8px;
+}
+
+.btn-open, .btn-close{
+    display: none;
 }
 
 /* MAIN */
@@ -122,8 +126,6 @@ nav a:hover::after {
     font-size: 4rem;
     font-weight: 500;
     color: white;
-    /* background-color: rgb(0, 0, 0, .5); */
-    /* backdrop-filter: blur(5px); */
     padding: 1rem;
     border-radius: 0.5rem;
     text-shadow: -.3rem .3rem .1rem rgba(0, 0, 0, .9);
@@ -164,6 +166,7 @@ article {
     width: 80%;
     height: 80%;
     transition: all .5s;
+    filter: drop-shadow(-.5rem .5rem .5rem black);
 }
 
 
@@ -373,6 +376,7 @@ article {
 }
 
 .div-img div {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
 }
@@ -386,7 +390,7 @@ article {
 
 .div-img img:hover {
     transform: scale(1.05);
-    filter: drop-shadow(-.7rem .7rem .4rem rgba(0, 0, 0, .9));
+    filter: drop-shadow(-.7rem .7rem .4rem black);
 }
 
 .div-img .duke1290 {
@@ -538,7 +542,7 @@ article {
 
 
 .section-6 {
-    height: 40rem;
+    height: auto;
     background-image: url(img/reyDePalmas.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -562,6 +566,7 @@ article {
 
 .divH2 {
     width: 80%;
+
     padding-bottom: 1.5rem;
     font-size: 1.5rem;
 }
@@ -712,4 +717,114 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media(max-width: 480px){
+    .header-section3 {
+        flex-direction: column;
+    }
+
+    .header-section3 h2{
+        font-size: 1.7rem;
+    }
+    
+    .header-section3 ul {
+        gap: .5rem;
+        font-size: .8rem;
+    }
+
+    .nav-main{
+        position: fixed;
+        right: 0;
+        top: 5.5rem;
+        background-color: rgba(0, 0, 0, .9);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .nav-main a{
+        transition: none;
+    }
+
+    .nav-main.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-main div{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .nav-main ul {
+        flex-direction: column;
+        margin-top: 2rem;
+        align-items: center;
+        gap: 3.6rem;
+    }
+
+    .btn-close{
+        margin-right: 1.2rem;
+        display: none;
+    }
+
+    .btn-open{
+        display: flex;
+    }
+    
+    .btn-open , .btn-close{
+        background-color: transparent;
+        border: none;
+        margin-left: 4rem;
+        margin-top: .5rem;
+    }
+
+    .fa-solid{
+        color: white;
+        font-size: 2rem;
+    }
+
+    .div-img div{
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .text4{
+        align-items: center;
+        text-align: center;
+    }
+
+    .video video{
+        width: 20rem;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    .div2 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+
+    .div2 div img{
+        margin: .5rem;
+    }
+
+    .container-from{
+        width: 90%;
+    }
+
+    footer{
+        font-size: .8rem;
+    }
 }

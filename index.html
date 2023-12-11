@@ -7,14 +7,27 @@
     <title>Moto1Pro</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/img/iconoCascoColorpng.png">
+    <script src="https://kit.fontawesome.com/20ec0208ec.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="body">
     <header>
         <div class="logo">
             <h1> <b>Moto1</b>Pro</h1>
         </div>
-        <nav>
+
+        <button id="btn-open" class="btn-open">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div>
+            <button id="btn-close" class="btn-close">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+
+        <nav id="nav-main" class="nav-main">
+
             <ul>
                 <li> <a href="#">HOME</a> </li>
                 <li> <a href="#"> SERVICES </a> </li>
@@ -23,6 +36,7 @@
                 <li> <a href="#"> CONTACT </a> </li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -280,7 +294,7 @@
         © Website made by Santiago Hurtado Marulanda - 2023
     </footer>
 
-
+    <script src="/script.js"></script>
 
 </body>
 
